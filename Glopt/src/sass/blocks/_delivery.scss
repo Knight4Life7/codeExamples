@@ -1,0 +1,120 @@
+.delivery {
+    min-height: 680px;
+    background: url(../img/main.jpg) center (center/cover) no-repeat;
+    padding: 23px 0 82px 0;
+    &__global {
+        font-size: 24px;
+        font-weight: 300;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 10px;
+    }
+    &__header {
+        font-size: 72px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        color: $main-color;
+        margin-top: 26px;
+    }
+    &__subheader {
+        font-size: 42px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 9px;
+    }
+
+    &__separator {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 38px;
+        hr {
+            color: #fff;
+            width: 400px;
+            opacity: 1;
+            height: 2px;
+            margin: 0;
+        }
+    }
+    &__round {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: #fff;
+        margin: 0 12px 0 12px;
+    }
+
+    
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 67px;
+        width: 100%;
+        margin-top: 35px;
+    }
+
+
+    &__descr {
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .delivery {
+        &__header {
+            font-size: 65px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .delivery {
+        &__header {
+            font-size: 48px;
+        }
+        &__subheader {
+            font-size: 34px;
+        }
+        &__global {
+            font-size: 18px;
+            margin-top: 15px;
+        }
+        &__descr {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .delivery {
+        &__global {
+            display: none;
+        }
+        &__header {
+            font-size: 40px;
+            margin-top: 38px;
+        }
+        &__subheader {
+            font-size: 22px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .delivery {
+        &__header {
+            font-size: 32px;
+        }
+        &__subheader {
+            font-size: 20px;
+        }
+    }
+}

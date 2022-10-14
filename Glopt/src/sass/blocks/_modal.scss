@@ -1,0 +1,79 @@
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.56);
+}
+.modal {
+    padding-bottom: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    min-height: 330px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    transform: translate(-50%, -50%);
+    &__descr {
+        margin-top: 10px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    &__close {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        color: $main-color;
+        font-size: 40px;
+        line-height: 40px;
+        cursor: pointer;
+    }
+    .error {
+        border: 1px solid red;
+    }
+    label.error {
+        border: none;
+        margin-top: 10px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 15px;
+    }
+}
+.modal-thanks {
+    padding: 10px 0 20px 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    min-height: 100px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    transform: translate(-50%, -50%);
+    &__close {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        color: $main-color;
+        font-size: 40px;
+        line-height: 40px;
+        cursor: pointer;
+    }
+    &__title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    &__descr {
+        margin-top: 5px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+
+#modal-consultation, #thanks {
+    display: none;
+}

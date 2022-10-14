@@ -1,0 +1,34 @@
+.work-scheme {
+    min-height: 454px;
+    padding: 51px 0 46px 0;
+    background-color: #f3f3f3;
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__item {
+        margin-top: 33px;
+        width: 279px;
+    }
+    &__icon {
+        display: block;
+        height: 50px;
+        margin: 0 auto;
+    }
+    &__title {
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 700;
+        text-align: center;
+        color: $main-color;
+        margin-top: 11px;
+    }
+    &__descr {
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+        color: #3a3a3a;
+        margin-top: 12px;
+    }
+}

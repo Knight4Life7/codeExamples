@@ -1,0 +1,55 @@
+.button {
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 160px;
+    height: 45px;
+    background-color: $main-color;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    &:focus {
+        outline: none;
+    }
+    &:active {
+        border: none;
+    }
+    &_delivery {
+        display: block;
+        font-size: 15px;
+        width: 230px;
+        height: 57px;
+        margin: 62px auto 0 auto;
+    }
+    &_price {
+        display: block;
+        margin: 25px auto 0 auto;
+    }
+    &_form {
+        width: 180px;
+    }
+    &_questions {
+        display: block;
+        margin: 10px auto 0 auto;
+        
+    }
+    &_modal {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .button {
+        &_hiden {
+            display: none;
+        }
+        &_footer {
+            width: 140px;
+        }
+        &_form {
+            margin-bottom: 0px;
+        }
+    }
+}

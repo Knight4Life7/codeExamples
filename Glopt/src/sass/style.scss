@@ -1,0 +1,31 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/bootstrap-grid.min';
+@import 'libs/slick';
+@import 'libs/fonts';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/animations';
+
+@import 'blocks/delivery';
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/subheader';
+@import 'blocks/advantages';
+@import 'blocks/work';
+@import 'blocks/divider';
+@import 'blocks/extension';
+@import 'blocks/description';
+@import 'blocks/prices';
+@import 'blocks/consultation';
+@import 'blocks/work-scheme';
+@import 'blocks/form';
+@import 'blocks/questions';
+@import 'blocks/maps';
+@import 'blocks/footer';
+@import 'blocks/reviews';
+@import 'blocks/modal';
+@import 'blocks/pageup';

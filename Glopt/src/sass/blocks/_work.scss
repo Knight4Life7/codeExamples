@@ -1,0 +1,41 @@
+.work {
+    min-height: 620px;
+    padding: 51px 0 57px 0;
+    &__img {
+        display: block;
+        margin-top: 37px;
+        max-height: 210px;
+    }
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        color: $main-color;
+        margin-top: 27px;
+    }
+    &__text {
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+        color: #3a3a3a;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .work {
+        &__img {
+            display: block;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .work {
+        &__img {
+           width: 280px;
+        }
+    }
+}

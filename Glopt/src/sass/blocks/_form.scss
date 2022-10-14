@@ -1,0 +1,106 @@
+.form {
+    &__input {
+        font-size: 13px;
+        font-weight: 300;
+        color: rgba(16, 16, 16, 0.7);
+        width: 268px;
+        height: 45px;
+        padding: 18px 173px 18px 28px;
+        border: 1px solid rgba(0, 0, 0, 0.21);
+        border-radius: 30px;
+        background-color: #ffffff;
+        padding: 0 28px 0 28px;
+        &:focus {
+            outline: none;
+        }
+        &_questions{
+            margin-top: 0;
+        }
+    }
+    &__flex {
+        margin-top: 68px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &_questions {
+        width: 813px;
+        margin: 0 auto;
+        .form__flex {
+            margin-top: 0px;
+        }
+    }
+    textarea {
+        font-size: 13px;
+        font-weight: 300;
+        text-align: left;
+        color: #616467;
+        width: 813px;
+        height: 71px;
+        resize: none;
+        padding: 12px 25px 8px 25px;
+        border: solid 1px rgba(0, 0, 0, 0.21);
+        border-radius: 10px;
+        background-color: #ffffff;
+        margin-top: 8px;
+        &:focus {
+            outline: none;
+        }
+    }
+    &_modal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        input {
+            margin-top: 15px;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .form {
+        &_questions {
+            width: 540px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            input {
+                margin-top: 15px;
+            }
+            textarea {
+                margin-top: 15px;
+                width: 440px;
+                height: 120px;
+            }
+        }
+        &__flex {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .form {
+        &_questions {
+            width: 500px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .form {
+        &_questions {
+            width: 280px;
+            textarea {
+                width: 260px;
+                height: 120px;
+            }
+        }
+    }
+}

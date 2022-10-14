@@ -1,0 +1,192 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+        display: block;
+    }
+    &__humburger {
+        display: none;
+    }
+    &__global {
+        display: none;
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        margin-bottom: 0;
+        &-item {
+            padding-right: 12px;
+            padding-left: 12px;
+            border-right: 1px dotted #ffffff;
+            &:last-child {
+                border-right: none;
+                padding-right: 0;
+            }
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+        &-link {
+            font-size: 15px;
+            font-weight: 500;
+            color: #ffffff;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+                color: $main-color;
+            }
+        }
+    }
+
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    &__question {
+        font-size: 14px;
+        font-weight: 300;
+        color: #ffffff;
+    }
+    &__phone {
+        font-size: 19px;
+        font-weight: 700;
+        color: #ffffff;
+        text-decoration: none;
+        &:hover {
+            color: $main-color;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .header {
+        &__menu {
+            padding-left: 10px;
+            &-link {
+                font-size: 12px;
+            }
+        }
+        &__contacts {
+            padding-left: 10px;
+            right: 0;
+        }
+        &__question {
+            font-size: 12px;
+        }
+        &__phone {
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        &__menu {
+            padding: 0 5px 0 0;
+            &-link {
+                font-size: 14px;
+            }
+        }
+        &__contacts {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        position: relative;  
+        justify-content: start;
+        &__global {
+            display: block;
+            font-size: 12px;
+            font-weight: 300;
+            text-align: center;
+            color: #ffffff;
+            margin-left: 10px;
+            padding-left: 10px;
+            border-left: 1px dotted #fff
+        }
+        &__menu {
+            position: fixed;
+            z-index: 10;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            top: 0px;
+            left: -100%;
+            width: 70%;
+            height: 100%;
+            padding: 20px 15px;
+            background-color: rgba(0,0,0, 0.8);
+            transition: 0.6s all;
+            &_active {
+                left: 0px;
+            }
+            &-item {
+                border: none;
+                padding: 0;
+                margin-top: 15px;
+            }
+            &-link {
+                display: block;
+                height: 30px;
+                font-size: 18px;
+            }
+        }
+        &__logo {
+            width: 50px;
+        }
+        &__humburger {
+            position: fixed;
+            top: 35px;
+            right: 30px;
+            display: block;
+            width: 50px;
+            height: 22px;
+            hr {
+                height: 3px;
+                background-color: #fff;
+                color: #fff;
+                opacity: 1;
+                margin: 4px auto 4px auto;
+                background-color: $main-color;
+            }
+            &_active {
+                hr {
+                    transition: 0.5s all;
+                    &:nth-child(1) {
+                        transform: rotate(-45deg); 
+                        margin-bottom: -1px;
+                    }
+                    &:nth-child(2) {
+                        display: none; 
+                    }
+                    &:nth-child(3) {
+                        transform: rotate(45deg);
+                        margin-top: -1px;
+                    }    
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .header {
+        &__humburger {
+            right: 10px;
+            hr {
+                width: 40px;
+                height: 3px;
+            }
+        }
+        &__global {
+            display: none;
+        }
+    }
+}

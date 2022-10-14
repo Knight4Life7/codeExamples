@@ -1,0 +1,12 @@
+.description {
+    font-size: 21px;
+    font-weight: 300;
+    text-align: center;
+    color: #2e2e2e;
+    margin-top: 17px;
+}
+@media (max-width: 575px) {
+    .description {
+        font-size: 16px;
+    }
+}
