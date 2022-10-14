@@ -1,0 +1,103 @@
+.about-me {
+    min-height: 820px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img {
+        display: block;
+        height: 550px;
+        margin-top: 40px;
+        border-radius: 15px;
+    }
+    &__text {
+        max-width: 605px;
+    }
+    &__subtitle, &__lessons, &__first-lesson {
+        font-weight: 300;
+        font-size: 23px;
+        margin-top: 40px;
+    }
+    &__lessons-medium-screen, &__first-lesson-medium-screen {
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    .about-me {
+        min-height: 700px;
+        &__img {
+            height: 470px;
+        }
+        &__text {
+            max-width: 550px;
+        }
+        &__subtitle, &__lessons, &__first-lesson {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .about-me {
+        min-height: 660px;
+        &__img {
+            height: 440px;
+        }
+        &__text {
+            max-width: 370px;
+        }
+        &__subtitle, &__lessons, &__first-lesson {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .about-me {
+        min-height: 620px;
+        &__img {
+            height: 260px;
+        }
+        &__text {
+            max-width: 320px;
+        }
+        &__lessons, &__first-lesson {
+            display: none;
+        }
+        &__lessons-medium-screen, &__first-lesson-medium-screen {
+            display: block;
+            font-weight: 300;
+            font-size: 16px;
+            margin-top: 25px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .about-me {
+        min-height: 980px;
+        &__wrapper {
+            flex-direction: column-reverse;
+        }
+        &__img {
+            height: 300px;
+            margin: 30px auto 0 auto;
+        }
+        &__text {
+            max-width: 310px;
+            margin: 0 auto;
+            text-align: justify;
+        }
+        &__subtitle {
+            margin-top: 25px;
+        }
+        &__lessons, &__first-lesson {
+            display: block;
+            margin-top: 20px;
+        }
+        &__lessons-medium-screen, &__first-lesson-medium-screen {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.default-title {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 80px;
+    margin: 0 0 0 0;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+@media (max-width: 1199px) {
+    .default-title {
+        padding-top: 70px;
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 991px) {
+    .default-title {
+        padding-top: 60px;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .default-title {
+        padding-top: 50px;
+        font-size: 22px;
+    }
+}

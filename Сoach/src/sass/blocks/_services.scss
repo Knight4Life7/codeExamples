@@ -1,0 +1,204 @@
+.services {
+    background-color: rgb(250, 250, 250);
+    border-top: 1px solid rgb(235, 235, 235);
+    border-bottom: 1px solid rgb(235, 235, 235);
+    padding-bottom: 80px;
+    &__image {
+        display: block;
+    }
+    &__image-mobile {
+        display: none;
+    }
+    &__block {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        background-color: #fff;
+        border-radius: 15px;
+        border: 1px solid rgb(235, 235, 235);
+    }
+    &__image-wrapper {
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        width: 400px;
+    }
+    &__image {
+        width: 100%;
+        border-radius: 15px;
+    }
+    &__description {
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__tile {
+        font-weight: 500;
+        font-size: 28px;
+        text-transform: uppercase;
+    }
+    &__section, &__objectives-title {
+        font-weight: 500;
+        font-size: 22px;
+        margin-top: 26px;
+    }
+    &__section-list, &__objectives-descr-list-item {
+        font-weight: 300;
+        font-size: 22px;
+        margin-top: 12px;
+    }
+    &__wrapper-medium-screen {
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    .services {
+        &__block {
+            height: 540px;
+        }
+        &__image-wrapper {
+            width: 360px;
+        }
+        &__description {
+            width: 500px;
+        }
+        &__tile {
+            font-size: 24px;
+        }
+        &__section, &__objectives-title {
+            font-size: 20px;
+        }
+        &__section-list, &__objectives-descr-list-item {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .services {
+        padding-bottom: 60px;
+        &__block {
+            height: 500px;
+        }
+        &__image-wrapper {
+            width: 310px;
+        }
+        &__description {
+            width: 360px;
+        }
+        &__tile {
+            font-size: 20px;
+        }
+        &__section, &__objectives-title {
+            font-size: 16px;
+        }
+        &__section-list, &__objectives-descr-list-item {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .services {
+        padding-bottom: 60px;
+        &__block {
+            height: 540px;
+            flex-wrap: wrap;
+            &:nth-of-type(2) {
+                height: 500px;
+            }
+        }
+        &__image-wrapper {
+            width: 220px;
+        }
+        &__description {
+            width: 280px;
+        }
+        &__tile {
+            font-size: 18px;
+        }
+        &__objectives-descr-list-item, &__objectives-title {
+            display: none;
+        }
+        &__wrapper-medium-screen {
+            display: block;
+            width: 500px;
+            margin-left: 20px;
+        }
+        &__objectives-descr-list-item-medium-screen {
+            font-weight: 300;
+            font-size: 16px;
+            margin-top: 12px;
+        } 
+        &__objectives-title-medium-screen {
+            font-weight: 500;
+            font-size: 16px;
+            margin-top: 12px;
+        }
+        &__objectives-descr-list-medium-screen {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .services {
+        &__block {
+            height: 520px;
+            width: 318px;
+            margin: 30px auto 0 auto;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: center;
+            &:nth-of-type(2) {
+                height: 440px;
+            }
+        }
+        &__tile {
+            font-size: 22px;
+        }
+        &__image-wrapper {
+            display: none;
+        }
+        &__image-mobile {
+            display: block;
+            width: 50px;
+            margin-right: 15px;
+        }
+        &__description-mobile-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 60px;
+        }
+        &__description {
+            margin: 0 auto;
+            width: 300px;
+            height: 200px;
+        }
+        &__section, &__section-list {
+            font-size: 18px;
+        }
+        &__section {
+            text-align: center;
+        }
+        &__wrapper-medium-screen {
+            margin: 0 auto;
+            width: 300px;
+        }
+        &__objectives-descr-list {
+            display: none;
+        }
+        &__objectives-title-medium-screen {
+            text-align: center;
+            font-size: 18px;
+        }
+        &__objectives-descr-list-medium-screen {
+            font-size: 18px; 
+        }
+    }
+}

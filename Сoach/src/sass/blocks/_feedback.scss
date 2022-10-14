@@ -1,0 +1,110 @@
+.feedback {
+    position: relative;
+    overflow: hidden;
+    &__form {
+        display: flex;
+        flex-direction: column;
+        &__wrapper {
+            margin: 0 auto;
+        }
+    }
+    &__title {
+        padding-top: 80px;
+        font-weight: 500;
+        font-size: 30px;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__input {
+        width: 340px;
+        height: 34px;
+        font-weight: 500;
+        font-size: 20px;
+        padding-left: 20px;
+        border-radius: 15px;
+        border: none;
+        margin: 25px 10px 0 10px;
+        outline: none;
+    }
+    &__review {
+        resize: none;
+        border-radius: 15px;
+        border: none;
+        font-weight: 500;
+        font-size: 20px;
+        padding: 10px 0 0 20px;
+        border-radius: 15px;
+        width: 730px;
+        margin: 25px auto 0 auto;
+        outline: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    .feedback {
+        &__title {
+            padding-top: 60px;
+            font-size: 26px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .feedback {
+        &__title {
+            padding-top: 40px;
+            font-size: 24px;
+        }
+        &__input {
+            width: 300px;
+            font-size: 18px;
+            padding-left: 16px;
+        }
+        &__review {
+            font-size: 18px;
+            padding: 10px 0 0 18px;
+            width: 644px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .feedback {
+        &__title {
+            padding-top: 40px;
+            font-size: 22px;
+        }
+        &__input {
+            width: 220px;
+            font-size: 18px;
+            padding-left: 16px;
+        }
+        &__review {
+            font-size: 18px;
+            padding: 10px 0 0 18px;
+            width: 482px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .feedback {
+        &__form__wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        &__title {
+            font-size: 20px;
+        }
+        &__input {
+            width: 280px;
+            font-size: 16px;
+            margin: 25px auto 0 auto;
+        }
+        &__review {
+            font-size: 16px;
+            width: 286px;
+        }
+    }
+}

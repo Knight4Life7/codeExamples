@@ -1,0 +1,108 @@
+.reviews {
+    padding-bottom: 80px;
+    &__block {
+        margin-top: 40px;
+        border: 2px solid #ebebeb;
+        padding: 20px 20px 20px 20px;
+        border-radius: 15px;
+    }
+    &__block-header {
+        font-weight: 500;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+    &__block-subheader {
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    &__block-description {
+        margin-top: 10px;
+        font-weight: 300;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .reviews {
+        &__block {
+            margin-top: 30px;
+            padding: 12px 12px 12px 12px;
+        }
+        &__block-header {
+            font-size: 20px;
+        }
+        &__block-subheader {
+            margin-top: 8px;
+            font-size: 18px;
+        }
+        &__block-description {
+            margin-top: 8px;
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .reviews {
+        padding-bottom: 60px;
+        &__block {
+            margin-top: 30px;
+            padding: 12px 12px 12px 12px;
+        }
+        &__block-header {
+            font-size: 18px;
+        }
+        &__block-subheader {
+            margin-top: 8px;
+            font-size: 16px;
+        }
+        &__block-description {
+            margin-top: 8px;
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .reviews {
+        padding-bottom: 50px;
+        &__block {
+            margin-top: 22px;
+            padding: 10px 10px 10px 10px;
+        }
+        &__block-header {
+            font-size: 16px;
+        }
+        &__block-subheader {
+            margin-top: 6px;
+            font-size: 15px;
+        }
+        &__block-description {
+            margin-top: 6px;
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .reviews {
+        &__block {
+            width: 294px;
+            margin: 22px auto 0 auto;
+            padding: 10px 10px 10px 10px;
+        }
+        &__block-header {
+            font-size: 16px;
+        }
+        &__block-subheader {
+            margin-top: 6px;
+            font-size: 15px;
+        }
+        &__block-description {
+            margin-top: 6px;
+            font-size: 15px;
+        }
+    }
+}
