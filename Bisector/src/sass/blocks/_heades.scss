@@ -1,0 +1,127 @@
+.header {
+    height: 70px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    &__logo {
+        position: absolute;
+        z-index: 100;
+        margin-top: 8px;
+        width: 99px;
+        height: 79px;
+    }
+    &__sutitle {
+        margin-top: 14px;
+        margin-left: 120px;
+        width: 290px;
+        font-family: Geometria;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    &__email {
+        font-family: Geometria;
+        font-size: 16px;
+        font-weight: 300;
+        color: $main-color;
+    }
+    &__phone {
+        margin-top: 0px;
+        font-family: Geometria;
+        font-size: 24px;
+        font-weight: 300;
+        color: #000000;
+        text-decoration: none;
+        &:hover {
+            color: $main-color;
+        }
+    }
+    &__contacts {
+        margin-top: 10px;
+        display: flex;
+    }
+    &__icon {
+        margin: 8px 9px 0 0;
+        width: 22px;
+        height: 22px;
+    }
+    &__subitle_min {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        &__subitle_min {
+            margin-top: 12px;
+            display: block;
+            height: 35px;
+            font-family: Geometria;
+            font-weight: 300;
+            font-size: 16px;;
+            text-align: center;
+            br {
+                display: none;
+            }
+        }
+        &__sutitle {
+            display: none;
+        }
+        &__contacts {
+            margin-left: 250px;
+            &_thanks {
+                position: absolute;
+                margin: 0;
+                right: 10px;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .header {
+        &__subitle_min {
+            br {
+                display: block;
+            }
+        }
+        &__contacts {
+            margin-left: 280px;
+            &_thanks {
+                position: absolute;
+                margin: 0;
+                right: 10px;
+                top: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .header {
+        position: relative;
+        &__logo {
+            margin-top: 15px;
+        }
+        &__icon {
+            display: none;
+        }
+        &__email {
+            display: none;
+        }
+        &__contacts {
+            &_thanks {
+                position: relative;
+                width: 100%;
+            }
+        }
+        &__wrapper {
+            position: absolute;
+            right: 5px;
+            top: 25px;
+        }
+        &__phone {
+            font-size: 18px;
+            color: $main-color;
+        }
+    }
+}
+

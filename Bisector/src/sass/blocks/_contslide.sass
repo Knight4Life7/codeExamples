@@ -1,0 +1,192 @@
+//     ================= SLIDER STYLES 
+.frame
+  height: 440px
+  line-height: 250px
+  overflow: hidden
+  ul.main-news__items-wrapp
+    list-style: none
+    margin: 0
+    padding: 0
+    height: 100%
+    position: relative
+    li
+      float: left
+      width: 403px
+      min-width: 403px
+      height: 100%
+      margin: 0 20px
+      cursor: pointer
+      &.active
+        box-shadow: 0 4px 20px 0 rgba(88, 121, 163, 0.2)
+
+/* Scrollbar
+
+.scrollbar
+  margin: 1em 0 1em 0
+  height: 3px
+  background: #CDDDFB
+  line-height: 0
+  position: relative
+  .handle
+    width: 20px !important
+    height: 20px
+    border-radius: 20px
+    background: #377CFD
+    cursor: pointer
+    position: absolute
+    top: -10px
+    .mousearea
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 20px
+
+/* Pages
+// .pages
+//   list-style: none
+//   margin: 20px 0
+//   padding: 0
+//   text-align: center
+//   li
+//     display: inline-block
+//     // width: 14px
+//     // height: 14px
+//     // margin: 0 4px
+//     // text-indent: -999px
+//     // border-radius: 10px
+//     // cursor: pointer
+//     overflow: hidden
+//     background: #fff
+//     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2)
+//     &:hover
+//       background: #aaa
+//     &.active
+//       background: #666
+
+/* Controls
+.controls
+  margin: 25px 0
+  text-align: center
+  
+  
+  
+//     ================= SLIDER STYLES ENDS
+.news-slider__item
+  position: relative
+  background: #FFFFFF
+  transition: all 0.3s
+  width: 403px
+  height: 440px
+  margin-right: 40px
+  +rmax(1200)
+    width: 314px
+  &:last-child
+    margin-right: 0
+  &:hover .news-slider__head
+    color: #377CFD
+  &:hover
+    cursor: pointer
+    box-shadow: 0 4px 20px 0 rgba(88,121,163,0.20)
+  
+  .news-slider__link
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    height: 100%
+    width: 100%
+    display: block
+  .news-slider__media
+    background-size: cover
+    width: 100%
+    height: 240px
+    position: relative
+    transition: all 0.5s
+  .news-slider__text-wrap
+    padding: 30px 40px
+    +rmax(1024)
+      padding: 26px 20px
+    .news-slider__title
+      display: flex
+      flex-flow: row nowrap
+      justify-content: space-between
+      align-items: flex-start
+      .news-slider__head
+        margin: 0
+        transition: all 0.3s
+        width: 70%
+        font-size: 18px
+        +rmax(1024)
+          font-size: 16px
+          padding: 0 10px 0 0
+      .date
+        opacity: 0.3
+        color: #1D1D1D
+        font-size: 13px
+        line-height: 15px
+        font-weight: 500
+        width: 30%
+        margin-top: 7px
+        text-align: right
+        white-space: nowrap
+        span:nth-child(2)
+          margin: 0 3px
+    .news-slider__text
+      +rmax(1024)
+        display: none
+
+.news-slider__item--youtube
+  &:hover
+    box-shadow: none
+  &:hover .news-slider__head
+    color: #000
+  .news-slider__youtube-link
+    background-size: cover
+    position: relative
+    transition: all 0.5s
+    font-size: 0
+    color: transparent
+    height: 240px
+    width: 100%
+    display: block
+    z-index: 9
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(0,0,0, 0.4)
+      transition: all 0.5s
+    &:hover
+      &:before
+        background-color: transparent
+        transition: all 0.5s
+  .news-slider__text-wrap--youtube
+    display: block
+    text-decoration: none
+    &:hover .news-slider__head
+      color: #377CFD
+  .news-slider__youtube-button
+    position: absolute
+    width: 0
+    height: 0
+    border: none
+    border-top: 10px solid transparent
+    border-bottom: 10px solid transparent
+    border-left: 18px solid #fff
+    background-color: transparent
+    top: 30%
+    left: 50%
+    transform: translateX(-8px) translateY(-10px)
+    margin: 0
+    padding: 0
+    cursor: pointer
+    transition: all 0.3s
+    outline: none
+    z-index: 10
+    &:hover
+      border-left: 18px solid #2B62FC

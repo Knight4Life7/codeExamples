@@ -1,0 +1,38 @@
+.benefit {
+    min-height: 558px;
+    background: url(../img/benefit.png) center (center/cover) no-repeat;
+    padding: 152px 0 140px 0;
+    &__title {
+        font-family: Geometria;
+        font-size: 36px;
+        font-weight: 300;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        span {
+            background-color: $main-color;
+        }
+    }
+    &__subtitle {
+        margin-top: 50px;
+        font-family: Geometria;
+        font-size: 22px;
+        font-weight: 500;
+        text-align: center;
+        color: #ffffff;
+    }
+    &__link {
+        color: $main-color;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .benefit {    
+        min-height: 470px;
+        padding: 37px 0 30px 0;
+        &__title {
+            font-size: 26px;
+        }
+    }
+}

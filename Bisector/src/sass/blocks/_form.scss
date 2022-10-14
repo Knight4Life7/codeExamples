@@ -1,0 +1,79 @@
+.form {
+    &__flex {
+        margin: 37px auto 0 auto;
+        width: 1086px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__input {
+        width: 333px;
+        height: 42px;
+        border: solid 1px #9f9d9d;
+        border-left: 8px solid $main-color;
+        padding-left: 30px;
+        &:focus {
+            outline: none;
+        }
+        &_phone {
+            background-image: url(../icons/phone-call.png);   
+            background-repeat: no-repeat;   
+            background-position: 4px; 
+        }
+        &_place {
+            background-image: url(../icons/placeholder.png);   
+            background-repeat: no-repeat;   
+            background-position: 4px; 
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .form {
+        &__flex {
+            width: 920px;
+        }
+        &__input {
+            width: 300px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .form {
+        &__flex {
+            width: 680px;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__input {
+            margin-top: 20px;
+            width: 400px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .form {
+        &__flex {
+            margin-top: 20px;
+            width: 460px;
+        }
+        &__input {
+            width: 400px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .form {
+        &__flex {
+            margin: 0 auto;
+            width: 300px;
+        }
+        &__input {
+            width: 280px;
+        }
+        &__wrapper {
+            margin: 0 auto;
+        }
+    }
+}

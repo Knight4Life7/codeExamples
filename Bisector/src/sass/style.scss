@@ -1,0 +1,27 @@
+* {
+    font-family: 'Geometria', sans-serif;
+}
+
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/bootstrap-grid.min';
+@import 'libs/fonts';
+@import 'base/variables';
+@import 'base/mixins';
+
+@import 'blocks/heades';
+@import 'blocks/button';
+@import 'blocks/shipping';
+@import 'blocks/payment';
+@import 'blocks/form';
+@import 'blocks/cargo';
+@import 'blocks/reviws';
+@import 'blocks/benefit';
+@import 'blocks/about';
+@import 'blocks/information';
+@import 'blocks/reliability';
+@import 'blocks/address';
+@import 'blocks/footer';
+@import 'blocks/contracts';
+@import 'blocks/static';
+@import 'blocks/thanks';
+

@@ -1,0 +1,163 @@
+.about {
+    min-height: 415px;
+    padding: 107px 0 110px 0;
+    &__title {
+        font-family: Geometria;
+        font-size: 36px;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 10px;
+        span {
+            background-color: $main-color;
+            color: #fff;
+        }
+    }
+    &__wrapper {
+        width: 264px;
+        height: 126px;
+        padding: 30px 0px 0px 17px;
+        margin: 40px auto 0 auto;
+        box-shadow: 0 0 18px 0 rgba(126, 126, 126, 0.35);
+        &:hover {
+            box-shadow: 0 0 18px 0 rgba(236, 97, 42, 0.35);
+            .about__block-title {
+                color: $main-color;
+            }
+        }
+        &_choice {
+            height: 193px;
+        }
+        &_work {
+            height: 193px;
+        }
+    }
+    &__block {
+        &-title {
+            font-family: Geometria;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 26px;
+        }
+        &-text {
+            margin-top: 10px;
+            font-family: Geometria;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 16px;
+        }
+        a {
+            color: $main-color;
+            text-decoration: none;
+        }
+    }
+}
+.company {
+    &__block1 {
+        background-image: url(../icons/company/2010.png);   
+        background-repeat: no-repeat;   
+        background-position: bottom 5px right 5px;
+    }
+    &__block2 {
+        background-image: url(../icons/company/years.png);   
+        background-repeat: no-repeat;   
+        background-position: bottom 5px right 5px;
+    }
+    &__block3 {
+        background-image: url(../icons/company/100.png);   
+        background-repeat: no-repeat;   
+        background-position: bottom 5px right 5px;
+    }
+    &__block4 {
+        background-image: url(../icons/company/2000.png);   
+        background-repeat: no-repeat;   
+        background-position: bottom 5px right 5px;
+    }
+}
+
+.choice {
+    &__block1 {
+        background-image: url(../icons/choice/ruble.png);   
+        background-repeat: no-repeat;   
+        background-position: bottom 5px right 5px;
+    }
+    &__block2 {
+        background-image: url(../icons/choice/calculator.png);   
+        background-repeat: no-repeat;   
+        background-position: bottom 5px right 5px;
+    }
+    &__block3 {
+        background-image: url(../icons/choice/contract.png);   
+        background-repeat: no-repeat;   
+        background-position: bottom 5px right 5px;
+    }
+    &__block4 {
+        background-image: url(../icons/choice/appointment.png);   
+        background-repeat: no-repeat;   
+        background-position: bottom 5px right 5px;
+    }
+}
+
+.work {
+    &__block1 {
+        background-image: url(../icons/work/phonecall.png);   
+        background-repeat: no-repeat;   
+        background-position: bottom 5px right 5px;
+    }
+    &__block2 {
+        background-image: url(../icons/work/details.png);   
+        background-repeat: no-repeat;   
+        background-position: bottom 5px right 5px;
+    }
+    &__block3 {
+        background-image: url(../icons/work/distance.png);   
+        background-repeat: no-repeat;   
+        background-position: bottom 5px right 5px;
+    }
+    &__block4 {
+        background-image: url(../icons/work/contract.png);   
+        background-repeat: no-repeat;   
+        background-position: bottom 5px right 5px;
+    }
+    &__block5 {
+        background-image: url(../icons/work/container-truck.png);   
+        background-repeat: no-repeat;   
+        background-position: bottom 5px right 5px;
+    }
+    &__block6 {
+        background-image: url(../icons/work/location.png);   
+        background-repeat: no-repeat;   
+        background-position: bottom 5px right 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .about {
+        &__title {
+            font-size: 26px;
+        }
+        &__wrapper {
+            &_choice {
+                width: 250px;
+            }
+            &_work {
+                width: 250px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .about {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        &__wrapper {
+            margin-top: 20px;
+            padding: 10px 0 0 10px;
+            &_work {
+                width: 130px;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,68 @@
+.cargo {
+    min-height: 710px;
+    padding: 270px 0 92px 0;
+    &__title {
+        margin-bottom: 56px;
+        font-family: Geometria;
+        font-size: 36px;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: center;
+        span {
+            width: 90px;
+            height: 40px;
+            background-color: $main-color;
+            color: #ffffff;
+        }
+    }
+    &__element {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__element-wrapper {
+        display: flex;
+        align-items: center;
+        margin-top: 9px;
+        display: flex;
+    }
+    &__element-title {
+        font-family: Geometria;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    &__element-list {
+        font-family: Geometria;
+        font-size: 14px;
+        font-weight: 300;
+        color: #434343;
+        list-style-image: url('../icons/triangle.png');     
+    }
+    &__element-img {
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .cargo {
+        padding-top: 450px;
+        &__title { 
+            margin-bottom: 20px;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .cargo {
+        padding-top: 20px;
+        &__title { 
+            font-size: 26px;
+        }
+    }
+}

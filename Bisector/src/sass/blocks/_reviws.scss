@@ -1,0 +1,123 @@
+.reviews {
+    background: url(../img/reviews.png) center (center/cover) no-repeat;
+    min-height: 355px;
+    padding: 55px 0px 24px 0;
+    &__block {
+        display: flex;
+        width: 1141px;
+        min-height: 203px;
+        background-color: #ffffff;
+        padding-right: 42px;
+    }
+    &__photo {
+        width: 190px;
+        height: 190px;
+        display: block;
+        margin: 18px 0 0 51px;
+    }
+    &__wrapper {
+        margin-left: 50px;
+    }
+    &__name {
+        margin-top: 18px;
+        font-family: Geometria;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    &__date {
+        margin-top: 10px;
+        font-family: Geometria;
+        font-size: 14px;
+        font-weight: 300;
+        color: $main-color;
+    }
+    &__text {
+        margin-top: 22px;
+        font-family: Geometria;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 14px;
+        color: #434343;
+    }
+}
+.reviews-min__block {
+    display: none;
+}
+@media (max-width: 1200px) {
+    .reviews {
+        &__block {
+            width: 935px;
+        }
+
+    }
+}
+
+@media (max-width: 991px) {
+    .reviews {
+        &__block {
+            width: 700px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .reviews {
+        &__block {
+            display: none;
+        }
+    }
+    .reviews-min {
+        &__block {
+            display: block;
+            width: 500px;
+            min-height: 203px;
+            background-color: #ffffff;
+            padding: 15px 10px 41px 12px;
+        }
+        &__info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__photo {
+            width: 150px;
+            height: 150px;
+        }
+        &__name {
+            font-family: Geometria;
+            font-size: 16px;
+            font-weight: 500;
+            color: #434343;
+        }
+        &__date {
+            font-family: Geometria;
+            font-size: 14px;
+            font-weight: 300;
+            color: $main-color;
+        }
+        &__text {
+            margin-top: 23px;
+            font-family: Geometria;
+            font-size: 14px;
+            font-weight: 300;
+            color: #434343;
+        }
+    }
+}
+
+@media (max-width: 575px)  {
+    .reviews-min {
+        &__block {
+            width: 100%;
+            padding-bottom: 1px;
+        }
+        &__photo {
+            width: 116px;
+            height: 116px
+        }
+    }
+}

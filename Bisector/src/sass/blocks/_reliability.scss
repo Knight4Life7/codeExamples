@@ -1,0 +1,46 @@
+.reliability {
+    min-height: 755px;
+    padding: 155px 0 136px 0;
+    background: url(../img/reliability.png) center (center/cover) no-repeat;
+    &_respons {
+        min-height: 614px;
+        padding: 58px 0 82px 0;
+        background: url(../img/responsblity.png) center (center/cover) no-repeat;
+    }
+    &__title {
+        font-family: Geometria;
+        font-size: 36px;
+         font-weight: 300;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        span {
+            background-color: $main-color;
+        }
+    }
+    &__subtitle {
+        margin-top: 53px;
+        font-family: Geometria;
+        font-size: 36px;
+        font-weight: 300;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        span {
+            background-color: $main-color;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .reliability {
+        padding: 50px 0 20px 0;
+        &__title {
+            font-size: 26px;
+        }
+        &__subtitle {
+            font-size: 26px;
+        }
+    }
+    
+}

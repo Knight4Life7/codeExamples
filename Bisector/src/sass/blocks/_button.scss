@@ -1,0 +1,95 @@
+.button {
+    margin-top: 18px;
+    width: 180px;
+    height: 43px;
+    border-radius: 21.5px;
+    background-color: $main-color;
+    border: none;
+    font-family: Geometria;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    &:focus {
+        outline: none;
+    }
+    &_payment {
+        margin: 0;
+        width: 262px;
+        height: 43px;
+        background-color: #fff;
+        color: $main-color;
+        font-weight: 500;
+    }
+    &_form {
+        display: block;
+        margin: 20px auto 0 auto;
+        width: 262px;
+        height: 43px;
+    }
+    &_reviews {
+        margin: 30px 0 0 879px;
+        width: 262px;
+        height: 43px;
+    }
+    &_benefit {
+        display: block;
+        margin: 47px auto 0 auto;
+        width: 262px;
+        height: 43px;
+    }
+    &_paymentmin {
+        display: none;
+        margin: 13px auto 0 auto;
+        width: 262px;
+        height: 43px;
+        background-color: #fff;
+        color: $main-color;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 1200px) {
+    .button {
+        &_reviews {
+            margin: 30px 0 0 680px;
+
+        }
+    }
+}
+@media (max-width: 991px) {
+    .button {
+        &_reviews {
+            margin: 30px 0 0 445px;
+
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .button {
+        &_header {
+            display: none;
+        }
+        &_reviews {
+            display: block;
+            margin: 21px auto 0 auto;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .button {
+        &_payment { 
+            display: none;
+        }
+        &_paymentmin {
+            display: block;
+            margin: 13px auto 0 auto;
+            width: 262px;
+            height: 43px;
+            background-color: #fff;
+            color: $main-color;
+            font-weight: 500;
+        }
+    }
+}
