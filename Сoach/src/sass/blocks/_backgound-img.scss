@@ -5,6 +5,8 @@
     &_main {
         background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/main-screen.jpg) center (center/cover) no-repeat;
         background-position-y: bottom;
+        top: -100px;
+        height: 130%;
     }
     &_feedback {
         background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/feedback.jpeg) center (center/cover) no-repeat;

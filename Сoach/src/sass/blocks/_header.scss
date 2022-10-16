@@ -64,8 +64,11 @@
         color: black;
         border-bottom: 1px solid white;
         transition: 0.8s;
-        &:hover, &:focus {
+        &:hover {
             border-bottom: 1px solid rgba(83, 149, 55, 1);
+        }
+        &:active, &:focus {
+            border-bottom: 1px solid white;
         }
     }
     &__hamburger {

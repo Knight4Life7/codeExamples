@@ -1,49 +1,20 @@
 .footer {
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
-    }
-    &__info {
-        width: 550px;
-    }
-    &__logo {
-        margin-top: 20px;
-        height: 30px;
-    }
-    &__img {
+    min-height: 60px;
+    &__developer-lick {
         display: block;
-        margin: 0 auto;
-        padding-left: 12px;
-        height: 100%;
-    }
-    &__nav {
-        list-style-type: none;
-        padding: 0;
-        margin: 10px 0 0 0;
-    }
-    &__link {
-        display: block;
-        padding: 2px 5px 2px 5px;
+        width: 120px;
+        height: 20px;
+        margin: 35px auto 0 auto;        
         text-align: center;
-        font-weight: 500;
-        font-size: 13px;
-        color: #000;
+        text-transform: uppercase;
         text-decoration: none;
+        color: black;
+        font-weight: 500;
+        font-size: 12px;
+        transition: 0.8s;
+        border-bottom: 1px solid white;
         &:hover {
-            color: rgb(83, 149, 55);
+            border-bottom: 1px solid rgb(83, 149, 55);
         }
-    }
-    &__dev {
-        margin-top: 75px;
-        width: 550px;
-        text-align: center;
-        font-weight: 500;
-        font-size: 13px;
-    }
-    &__copyright {
-        margin: 10px 0 15px 0;
-        text-align: center;
-        font-weight: 500;
-        font-size: 13px;
     }
 }

@@ -6,7 +6,8 @@ window.addEventListener('DOMContentLoaded', () => {
     close = document.querySelector('.modal-thanks__close'),
     modal = document.querySelector('.modal-thanks'),
     backgroundMain = document.querySelector('.background-img_main'),
-    backgroundFeedback = document.querySelector('.background-img_feedback');
+    backgroundFeedback = document.querySelector('.background-img_feedback'),
+    allLinks = document.querySelectorAll('a[href^="#"]');
 
     function modalOpen(e) {
         e.preventDefault()
@@ -49,4 +50,15 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    allLinks.forEach((item) => {
+        item.addEventListener('click', (e) => {
+            e.preventDefault();
+            const id = item.getAttribute('href');
+
+            document.querySelector(id).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        });
+    });
 });
