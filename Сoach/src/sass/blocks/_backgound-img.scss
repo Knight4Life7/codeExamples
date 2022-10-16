@@ -2,19 +2,38 @@
     position: absolute;
     inset: 0;
     height: 130%;
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/main-screen.jpg) center (center/cover) no-repeat;
-    background-position-y: bottom;
+    &_main {
+        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/main-screen.jpg) center (center/cover) no-repeat;
+        background-position-y: bottom;
+    }
+    &_feedback {
+        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/feedback.jpeg) center (center/cover) no-repeat;
+        background-position-y: bottom;
+        top: -500px;
+        width: 100%;
+    }
+}
+@media (max-width: 1199px) {
+    .background-img {
+        &_feedback {
+            height: 140%;
+        }
+    }
 }
 
 @media (max-width: 991px) {
     .background-img {
-        min-height: 400px;
+        &_feedback {
+            height: 144%;
+        }
     }
 }
 
 @media (max-width: 767px) {
     .background-img {
-        min-height: 370px;
+        &_feedback {
+            height: 160%;
+        }
     }
 }
 
