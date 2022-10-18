@@ -7,7 +7,8 @@ window.addEventListener('DOMContentLoaded', () => {
     modal = document.querySelector('.modal-thanks'),
     backgroundMain = document.querySelector('.background-img_main'),
     backgroundFeedback = document.querySelector('.background-img_feedback'),
-    allLinks = document.querySelectorAll('a[href^="#"]');
+    allLinks = document.querySelectorAll('a[href^="#"]'),
+    arrow = document.querySelector('.pageup');
 
     function modalOpen(e) {
         e.preventDefault()
@@ -19,6 +20,15 @@ window.addEventListener('DOMContentLoaded', () => {
         modal.classList.remove('modal-thanks_active');
         document.body.style.overflow = '';
     };
+
+    function parallaxScroll() {
+        let offset = document.documentElement.scrollTop,
+        feedbackOffset = document.querySelector('.feedback').offsetTop - window.innerHeight;
+        backgroundMain.style.transform = `translateY(${offset * 0.8}px)`;
+        if (offset > feedbackOffset) {
+            backgroundFeedback.style.transform = `translateY(${(offset-feedbackOffset) * 0.7}px)`;
+        }
+    }
 
     hamburger.addEventListener('click', () => {
         navigationMenu.classList.toggle('header__navigation_active');
@@ -39,14 +49,17 @@ window.addEventListener('DOMContentLoaded', () => {
         if (e.code === 'Escape' && modal.classList.contains('modal-thanks_active')) {
             modalClose();
         };
+    }); 
+
+    window.addEventListener('scroll', () => {
+        requestAnimationFrame(parallaxScroll);
     });
 
     window.addEventListener('scroll', () => {
-        let offset = document.documentElement.scrollTop,
-            feedbackOffset = document.querySelector('.feedback').offsetTop - window.innerHeight;
-        backgroundMain.style.transform = `translateY(${offset * 0.8}px)`;
-        if (offset > feedbackOffset) {
-            backgroundFeedback.style.transform = `translateY(${(offset-feedbackOffset) * 0.7}px)`;
+        if(document.documentElement.scrollTop > 1600) {
+            arrow.classList.add('pageup_active');
+        } else {
+            arrow.classList.remove('pageup_active');
         }
     });
 

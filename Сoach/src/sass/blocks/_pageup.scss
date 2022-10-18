@@ -1,0 +1,29 @@
+.pageup {
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    right: -50px;
+    width: 45px;
+    height: 45px;
+    transition: 0.8s;
+    &_active {
+        right: 40px;
+    }
+}
+.arrow {
+    width: 100%;
+}
+
+@media (max-width: 575px) {
+    .pageup {
+        display: block;
+        position: fixed;
+        bottom: 30px;
+        right: -40px;
+        width: 40px;
+        height: 40px;
+        &_active {
+            right: 30px;
+        }
+    }
+}
