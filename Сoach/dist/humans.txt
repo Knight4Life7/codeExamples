@@ -3,7 +3,7 @@
     email: besedinivan01@gmail.com
     
 /* SITE */
-    Last update:2022/10/17
+    Last update:2022/10/19
     Language: Russian
     Doctype: HTML5
     IDE: Visual Studio Code, Photoshop

@@ -11,15 +11,15 @@ window.addEventListener('DOMContentLoaded', () => {
     arrow = document.querySelector('.pageup');
 
     function modalOpen(e) {
-        e.preventDefault()
+        e.preventDefault();
         modal.classList.add('modal-thanks_active');
         document.body.style.overflow = 'hidden';
-    };
+    }
         
     function modalClose() {
         modal.classList.remove('modal-thanks_active');
         document.body.style.overflow = '';
-    };
+    }
 
     function parallaxScroll() {
         let offset = document.documentElement.scrollTop,
@@ -48,7 +48,7 @@ window.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('keydown', (e) => {
         if (e.code === 'Escape' && modal.classList.contains('modal-thanks_active')) {
             modalClose();
-        };
+        }
     }); 
 
     window.addEventListener('scroll', () => {

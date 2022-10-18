@@ -3,13 +3,13 @@
     inset: 0;
     height: 130%;
     &_main {
-        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/main-screen.jpg) center (center/cover) no-repeat;
+        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/main-screen.webp) center (center/cover) no-repeat;
         background-position-y: bottom;
         top: -100px;
         height: 130%;
     }
     &_feedback {
-        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/feedback.jpeg) center (center/cover) no-repeat;
+        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/feedback.webp) center (center/cover) no-repeat;
         background-position-y: bottom;
         top: -500px;
         width: 100%;
