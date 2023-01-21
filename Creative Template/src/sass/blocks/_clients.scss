@@ -1,0 +1,44 @@
+.clients {
+    background: url(../img/people-bg.png) center (center/cover) no-repeat;
+    min-height: 820px;
+    overflow: auto;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__block {
+        margin-top: 90px;
+        width: 50%;
+        display: flex;
+        justify-content: start;
+    }
+    &__text {
+        margin-left: 30px;
+    }
+    &__title {
+        font-size: 14px;
+        font-weight: 500;
+        color: #333;
+        text-transform: uppercase;
+    }
+    &__subtitle {
+        margin-top: 15px;
+        font-size: 15px;
+        font-weight: 300;
+        color: #333;
+    }
+    &__divider {
+        margin-top: 17px;
+        width: 60px;
+        height: 3px;
+        background-color: $first-main-color;
+    }
+    &__description {
+        width: 360px;
+        margin-top: 24px;
+        font-size: 15px;
+        font-weight: 500;
+        color: #999;
+    }
+}

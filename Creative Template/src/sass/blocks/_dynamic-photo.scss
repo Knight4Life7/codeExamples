@@ -1,0 +1,8 @@
+.dynamic-photo {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    &__img {
+        width: 360px;
+    }
+}

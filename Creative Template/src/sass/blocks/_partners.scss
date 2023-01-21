@@ -1,0 +1,10 @@
+.partners {
+    min-height: 250px;
+    background-color: #f8f8f8;
+    &__logos {
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+}

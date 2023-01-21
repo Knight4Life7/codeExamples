@@ -1,0 +1,35 @@
+@import 'base/mixins';
+@import 'base/variables';
+@import 'base/animations';
+
+@import 'libs/fonts';
+@import 'libs/normalize';
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/main-screen';
+@import 'blocks/button';
+@import 'blocks/about';
+@import 'blocks/standard';
+@import 'blocks/dynamic-photo';
+@import 'blocks/statistics';
+@import 'blocks/services';
+@import 'blocks/design';
+@import 'blocks/definition';
+@import 'blocks/reviews';
+@import 'blocks/team';
+@import 'blocks/partners';
+@import 'blocks/work';
+@import 'blocks/clients';
+@import 'blocks/blog';
+@import 'blocks/map';
+@import 'blocks/footer';

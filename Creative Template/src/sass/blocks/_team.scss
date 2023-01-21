@@ -1,0 +1,26 @@
+.team {
+    min-height: 950px;
+    &__content {
+        margin-top: 92px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img {
+        width: 360px;
+    }
+    &__title {
+        margin-top: 30px;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+        color: #333;
+        text-transform: uppercase;
+    }
+    &__subtitle {
+        margin-top: 15px;
+        font-size: 15px;
+        font-weight: 300;
+        text-align: center;
+        color: #999;
+    }
+}

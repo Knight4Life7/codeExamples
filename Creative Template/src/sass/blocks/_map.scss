@@ -1,0 +1,30 @@
+.map {
+    padding: 60px 0 0 0;
+    min-height: 160px;
+    background: url(../img/map.png) center (center/cover) no-repeat;
+    &__pin {
+        display: block;
+        margin: 0 auto;
+    }
+    &__img {
+        display: block;
+        margin: 0 auto;
+    }
+    &__title {
+        display: block;
+        padding-bottom: 3px;
+        width: 150px;
+        margin: 20px auto 15px auto;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        color: $first-main-color;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-bottom: 2px solid rgba($color: #000000, $alpha: 0);
+        transition: 0.3s;
+        &:hover {
+            border-bottom: 2px solid $first-main-color;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.reviews {
+    height: 290px;
+    background-color: #f8f8f8;
+    overflow: auto;
+    &_white-background {
+        background-color: #fff;
+        overflow: visible;
+    }
+    &__block {
+        width: 980px;
+        margin: 70px auto 0 auto;
+        display: flex;
+        justify-content: space-between;
+        &-content {
+            width: 760px;
+        }
+        &_without-margin {
+            margin-top: 0;
+        }
+    }
+    &__icon {
+        width: 150px;
+        height: 150px;
+        border: 1px solid $second-main-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &_without-border {
+            border: none;
+        }
+    }
+    &__text {
+        margin-top: 10px;
+        font-size: 24px;
+        font-weight: 300;
+        color: #999;
+    }
+    &__client {
+        margin-top: 20px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    &__divider {
+        width: 60px;
+        height: 3px;
+        background-color: $first-main-color;
+    }
+    &__title {
+        margin-left: 15px;
+        font-family: KaushanScript;
+        font-size: 24px;
+        font-weight: 500;
+        color: #333;
+    }
+}

@@ -1,0 +1,53 @@
+.main-screen {
+    background: url(../img/main.png) center (center/cover) no-repeat;
+    min-height: 1260px;
+    &__title {
+        margin: 178px 0 0 0;
+        font-family: KaushanScript;
+        font-size: 72px;
+        font-weight: 500;
+        text-align: center;
+        color: #fff;
+    }
+    &__subtitle {
+        margin: 42px 0 71 0;
+        font-size: 150px;
+        font-weight: 700;
+        text-align: center;
+        color: #fff;
+    }
+    &__divider {
+        height: 3px;
+        width: 60px;
+        background-color: #fff;
+        margin: 0 auto;
+    }
+    &__block {
+        margin-top: 157px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__line {
+        height: 3px;
+        width: 270px;
+        background-color: #fff;
+    }
+    &__text {
+        margin-top: 25px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    &__text-number {
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+    }
+    &__text-subtitle {
+        margin-left: 8px;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}

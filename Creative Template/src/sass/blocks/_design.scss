@@ -1,0 +1,18 @@
+.design {
+    position: relative;
+    overflow: visible;
+    height: 850px;
+    background: url(../img/design.png) center (center/cover) no-repeat;
+    padding-top: 100px;
+    &__tablet {
+        position: absolute;
+        bottom: -4px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__smartphone {
+        position: absolute;
+        left: 58%;
+        bottom: -10%;
+    }
+}

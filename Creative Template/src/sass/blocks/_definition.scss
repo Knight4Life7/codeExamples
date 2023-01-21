@@ -1,0 +1,43 @@
+.definition {
+    min-height: 800px;
+    &__main-block {
+        margin-top: 92px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__picture {
+        width: 550px;
+    }
+    &__themes {
+        width: 550px;
+        &-icon {
+            margin-left: 16px;
+        }
+        &-block-header {
+            height: 60px;
+            border: 1px solid#e5e5e5;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+        &-title {
+            text-transform: uppercase;
+            margin-left: 15px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #333;
+        }
+        &-description {
+            display: none;
+            height: 152px;
+            border: 1px solid#e5e5e5;
+            padding: 20px 50px 20px 20px;
+            font-size: 15px;
+            font-weight: 300;
+            color: #999;
+            &_active {
+                display: block;
+            }
+        }
+    }
+}
